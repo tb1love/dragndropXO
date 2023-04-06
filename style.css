@@ -1,0 +1,45 @@
+.row{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.column{
+	display: flex;
+	flex-direction: column;
+}
+
+.rect, .cross, .zero{
+	display: table;
+	width: 100px;
+	height: 100px;
+	background: #ededf2;
+	border: 1px solid #e3e3e3;
+	margin: 5px;
+	font-size: 30px;
+	color: #333333;
+	user-select: none;
+}
+
+.cross, .zero{
+	width: 50px;
+	height: 50px;
+
+	display: table;
+	position: absolute;
+	top: 20px;
+}
+
+.cross{
+	left: 20px;
+}
+
+.zero{	
+	right: 20px;
+}
+
+.center-text{
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+}
